@@ -1,0 +1,22 @@
+/* ========== Hero Component Styles ========== */
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 5%;
+	background-image: url(../assets/hero-img/heroBg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow-y: hidden;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.hero__image {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	width: 50%;
+}

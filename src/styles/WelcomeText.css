@@ -1,0 +1,71 @@
+/* ========== WelcomeText Component Styles ========== */
+
+@keyframes blink {
+	0% {
+		background-color: #FFFFFF99;
+	}
+
+	50% {
+		background-color: transparent;
+	}
+
+	100% {
+		background-color: #FFFFFF99;
+	}
+}
+
+.welcomeText__titleBox {
+	background-color: #272A2FCC;
+	padding: 1rem;
+	border: 2px solid #CDCDCD;
+	border-radius: 1rem;
+	z-index: 2;
+
+}
+
+.welcomeText__title {
+	font-size: 3rem;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.welcomeText__subTitle {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.violet {
+	color: #bb9cf7;
+}
+
+.green {
+	color: #9DD274;
+}
+
+.red {
+	color: #FF7A83;
+}
+
+.yellow {
+	color: #EDCB66;
+}
+
+.orange {
+	color: #F39952;
+}
+
+.blue {
+	color: #85DAFB;
+}
+
+.grey {
+	color: #B0B0B0;
+}
+
+.cursor {
+	display: inline-block;
+	width: 1.2rem;
+	height: 2.2rem;
+	background-color: #FFFFFF99;
+	animation: blink 1s infinite;
+}
