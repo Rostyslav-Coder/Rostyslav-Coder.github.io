@@ -1,71 +1,48 @@
 /* ========== WelcomeText Component Styles ========== */
 
-@keyframes blink {
-	0% {
-		background-color: #FFFFFF99;
-	}
-
-	50% {
-		background-color: transparent;
-	}
-
-	100% {
-		background-color: #FFFFFF99;
-	}
-}
-
 .welcomeText__titleBox {
+	width: 0px;
 	background-color: #272A2FCC;
 	padding: 1rem;
 	border: 2px solid #CDCDCD;
 	border-radius: 1rem;
+	opacity: 0;
 	z-index: 2;
-
 }
 
 .welcomeText__title {
-	font-size: 3rem;
+	color: #FF7A83;
+	font-size: 2.6rem;
 	font-weight: 700;
 	white-space: nowrap;
 }
 
-.welcomeText__subTitle {
-	font-size: 2rem;
-	font-weight: 700;
-}
-
-.violet {
+.welcomeText__title>span:nth-of-type(1)>.h_0,
+.welcomeText__title>span:nth-of-type(4)>.a_0 {
 	color: #bb9cf7;
 }
 
-.green {
+.welcomeText__title>span:nth-of-type(2)>.r_0 {
+	margin-left: 2.6rem;
+}
+
+.welcomeText__title>span:nth-of-type(1)>.m_1,
+.welcomeText__title>span:nth-of-type(2)>.r_0,
+.welcomeText__title>span:nth-of-type(4)>.I_1,
+.welcomeText__title>span:nth-of-type(4)>.f_3,
+.welcomeText__title>span:nth-of-type(4)>.f_3 {
 	color: #9DD274;
 }
 
-.red {
-	color: #FF7A83;
-}
 
-.yellow {
+.welcomeText__title>*:nth-of-type(1)>.\(_3,
+.welcomeText__title>*:nth-of-type(1)>.\{_5,
+.welcomeText__title>*:nth-of-type(3)>.\}_0 {
 	color: #EDCB66;
 }
 
-.orange {
-	color: #F39952;
-}
-
-.blue {
+.welcomeText__title>span:nth-of-type(2)>.P_1,
+.welcomeText__title>span:nth-of-type(4)>.D_4 {
 	color: #85DAFB;
-}
-
-.grey {
-	color: #B0B0B0;
-}
-
-.cursor {
-	display: inline-block;
-	width: 1.2rem;
-	height: 2.2rem;
-	background-color: #FFFFFF99;
-	animation: blink 1s infinite;
+	margin-left: -1.2rem;
 }

@@ -1,41 +1,66 @@
 // WelcomeText Component Module
 
+import { useState, useEffect } from 'react';
 import '../styles/WelcomeText.css';
 
 const WelcomeText = () => {
+	const content = 'hello myNameIs = () => {\nrostyslav.,Putnikov()\n};\nand I\'m = fullStack.,Developer()';
+	const separators = /[, ]/;
+	const [text, setText] = useState('');
+	const [inputFieldStyle, setInputFieldStyle] = useState({});
+	const [textOutput, setTextOutput] = useState(false);
+
+	useEffect(() => {
+		const fieldAnimationDelay = setTimeout(() => {
+			setInputFieldStyle({
+				transition: '2.5s',
+				transitionProperty: 'opacity, width',
+				width: '60%',
+				opacity: '1',
+			});
+		}, 3000);
+
+		const textAnimationDelay = setTimeout(() => {
+			let i = -1;
+			setTextOutput(true);
+			const timer = setInterval(() => {
+				if (i < content.length) {
+					setText((prevText) => prevText + content[i]);
+					i++;
+				}
+				if (i === content.length - 1) {
+					clearInterval(timer);
+				}
+			}, 200);
+
+			return () => clearInterval(timer);
+		}, 5500);
+
+		return () => {
+			clearTimeout(fieldAnimationDelay);
+			clearTimeout(textAnimationDelay);
+		};
+	}, []);
+
+
 	return (
-		<div className='welcomeText__titleBox'>
-			<h2 className='welcomeText__subTitle'>
-				<span className='violet'>hello </span>
-				<span className='green'>myNameIs </span>
-				<span className='red'>= </span>
-				<span className='yellow'>&#40;</span>
-				{/* <spap className='orange'>is</spap> */}
-				<span className='yellow'>&#41; </span>
-				<span className='red'>=&gt; </span>
-				<span className='yellow'>&#123;</span>
-			</h2>
-			<h1 className='welcomeText__title'>
-				<span>&nbsp;&nbsp;</span>
-				<span className='green'>rostyslav.</span>
-				<span className='blue'>Putnikov</span>
-				<span className='yellow'>()</span>
-				<span className='grey'>;</span>
-			</h1>
-			<h2 className='hero__subTitle'>
-				<span className='yellow'>&#125;</span>
-				<span className='grey'>;</span>
-			</h2>
-			<h2 className='welcomeText__subTitle'>
-				<span className='violet'>and </span>
-				<span className='green'>I`m </span>
-				<span className='red'>= </span>
-				<span className='green'>fullStack.</span>
-				<span className='blue'>Developer</span>
-				<span className='yellow'>()</span>
-				<span className='grey'>;</span>
-				<span className='cursor'></span>
-			</h2>
+		<div className='welcomeText__titleBox' style={inputFieldStyle}>
+			{textOutput && (
+				<h1 className='welcomeText__title'>
+					{text.split('\n').map((line, index) => (
+						<>
+							<span key={index}>
+								{line.split(separators).map((word, wordIndex) => (
+									<span key={wordIndex} className={`${word[0]}_${wordIndex}`}>
+										{`${word} `}
+									</span>
+								))}
+							</span>
+							<br />
+						</>
+					))}
+				</h1>
+			)}
 		</div>
 	);
 };

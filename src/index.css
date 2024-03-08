@@ -1,8 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:200,300,regular,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
 
 :root {
-	font-family: 'Space Mono', system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: 'Inconsolata', system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
