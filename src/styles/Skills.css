@@ -1,13 +1,8 @@
 /* ========== Skills Component Styles ========== */
 
 .skills {
-	min-height: 100vh;
+	background-color: #242424;
 	padding: 5rem 5%;
-	background-image: url(../assets/skills-img/skillsBg.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -33,10 +28,11 @@
 .skill__card {
 	width: 22%;
 	padding: 0.5rem;
-	margin-bottom: 1rem;
-	background-color: #272A2FCC;
-	border: 2px solid #CDCDCD;
+	margin-bottom: 1.5rem;
+	background-color: #272A2F;
+	border: 1px solid #CDCDCD;
 	border-radius: 0.5rem;
+	box-shadow: 0 0 0.75rem 0.25rem #CDCDCD;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

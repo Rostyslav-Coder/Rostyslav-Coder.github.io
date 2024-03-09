@@ -1,0 +1,23 @@
+/* ========== Projects Component Styles ========== */
+
+.projects {
+	min-height: 100vh;
+	padding: 5rem 5%;
+	background-image: url(../assets/projects-img/skillsBg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.projects__title {
+	color: #FFF;
+	font-family: 'Orbitron';
+	font-size: 3.6rem;
+	line-height: 1.2;
+}
