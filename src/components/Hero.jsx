@@ -6,7 +6,7 @@ import hero from '../assets/hero-img/myPhoto.webp'
 import WelcomeText from './WelcomeText';
 import '../styles/Hero.css';
 
-const Hero = ({ heroRef }) => {
+const Hero = () => {
 	const [heroStyle, setHeroStyle] = useState({});
 
 	useEffect(() => {
@@ -27,7 +27,7 @@ const Hero = ({ heroRef }) => {
 
 	return (
 		<div className='hero'>
-			<img className='hero__image' src={hero} alt='My photo' style={heroStyle} ref={heroRef} />
+			<img className='hero__image' src={hero} alt='My photo' style={heroStyle} />
 			<WelcomeText />
 		</div>
 	);

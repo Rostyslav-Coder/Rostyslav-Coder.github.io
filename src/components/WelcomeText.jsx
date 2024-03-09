@@ -26,7 +26,7 @@ const WelcomeText = () => {
 			const timer = setInterval(() => {
 				if (i < content.length) {
 					setText((prevText) => prevText + content[i]);
-					i++;
+					i += 1;
 				}
 				if (i === content.length - 1) {
 					clearInterval(timer);
