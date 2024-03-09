@@ -31,7 +31,7 @@ const WelcomeText = () => {
 				if (i === content.length - 1) {
 					clearInterval(timer);
 				}
-			}, 200);
+			}, 75);
 
 			return () => clearInterval(timer);
 		}, 5500);

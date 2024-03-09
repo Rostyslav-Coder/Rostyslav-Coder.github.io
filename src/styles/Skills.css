@@ -1,0 +1,8 @@
+/* ========== Skills Component Styles ========== */
+
+.skills {
+	min-height: 100vh;
+	background-image: url(../assets/skills-img/skillsBg.jpg);
+	background-size: cover;
+	background-position: center;
+}

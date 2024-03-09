@@ -1,11 +1,12 @@
 // Hero Component Module
 
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import hero from '../assets/hero-img/myPhoto.webp'
 import WelcomeText from './WelcomeText';
 import '../styles/Hero.css';
 
-const Hero = () => {
+const Hero = ({ heroRef }) => {
 	const [heroStyle, setHeroStyle] = useState({});
 
 	useEffect(() => {
@@ -26,10 +27,13 @@ const Hero = () => {
 
 	return (
 		<div className='hero'>
-			<img className='hero__image' src={hero} alt='My photo' style={heroStyle} />
+			<img className='hero__image' src={hero} alt='My photo' style={heroStyle} ref={heroRef} />
 			<WelcomeText />
 		</div>
 	);
 };
 
+Hero.propTypes = {
+	heroRef: PropTypes.object,
+}
 export default Hero;
