@@ -15,7 +15,7 @@ const WelcomeText = () => {
 			setInputFieldStyle({
 				transition: '2.5s',
 				transitionProperty: 'opacity, width',
-				width: '60%',
+				width: '100%',
 				opacity: '1',
 			});
 		}, 3000);

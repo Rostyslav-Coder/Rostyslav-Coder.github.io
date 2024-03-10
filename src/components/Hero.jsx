@@ -1,8 +1,10 @@
 // Hero Component Module
 
 import { useState, useEffect } from 'react';
+import { ParallaxBanner, ParallaxBannerLayer, Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
-import hero from '../assets/hero-img/myPhoto.webp'
+import hero from '../assets/hero-img/myPhoto.webp';
+import heroBackGround from '../assets/hero-img/heroBg.jpg';
 import WelcomeText from './WelcomeText';
 import '../styles/Hero.css';
 
@@ -26,10 +28,18 @@ const Hero = () => {
 	}, []);
 
 	return (
-		<div className='hero'>
+		<ParallaxBanner className='hero'>
+			<ParallaxBannerLayer
+				className='hero__layer'
+				image={heroBackGround}
+				speed={-25}
+				style={{ backgroundPosition: 'top', backgroundSize: '100% auto' }}
+			/>
 			<img className='hero__image' src={hero} alt='My photo' style={heroStyle} />
-			<WelcomeText />
-		</div>
+			<Parallax className='hero__parallaxBox' speed={15}>
+				<WelcomeText />
+			</Parallax>
+		</ParallaxBanner >
 	);
 };
 

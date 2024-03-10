@@ -1,18 +1,22 @@
 /* ========== Hero Component Styles ========== */
 
 .hero {
-	width: 100%;
+	width: 100vw;
 	min-height: 100vh;
 	padding: 0 5%;
-	background-image: url(../assets/hero-img/heroBg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	z-index: 1;
+}
+
+.hero__layer {
+	width: 100%;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+	z-index: 2;
 }
 
 .hero__image {
@@ -22,5 +26,11 @@
 	width: 50%;
 	transform: scale(0.8);
 	opacity: 0;
-	z-index: 2;
+	z-index: 3;
+}
+
+.hero__parallaxBox {
+	width: 60%;
+	margin-left: auto;
+	z-index: 4;
 }

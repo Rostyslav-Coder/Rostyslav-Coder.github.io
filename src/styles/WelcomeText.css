@@ -3,6 +3,7 @@
 .welcomeText__titleBox {
 	width: 0px;
 	min-height: 5rem;
+	margin-left: auto;
 	background-color: #272A2FCC;
 	padding: 1rem;
 	border: 2px solid #CDCDCD;

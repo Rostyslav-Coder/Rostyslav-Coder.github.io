@@ -3,7 +3,7 @@
 .projects {
 	min-height: 100vh;
 	padding: 5rem 5%;
-	background-image: url(../assets/projects-img/skillsBg.jpg);
+	background-image: url(../assets/projects-img/projectsBg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,6 +13,7 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 2rem;
+	z-index: 30;
 }
 
 .projects__title {
@@ -20,4 +21,74 @@
 	font-family: 'Orbitron';
 	font-size: 3.6rem;
 	line-height: 1.2;
+}
+
+.parallax__box {
+	width: 35%;
+}
+
+.project__card {
+	width: 100%;
+	padding: 1rem;
+	position: relative;
+	background-color: #242424CC;
+	background-size: 80% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	backdrop-filter: blur(4px);
+	border: 2px solid #242424;
+	border-radius: 1rem;
+	transform-style: preserve-3d;
+	margin-bottom: 25px;
+	aspect-ratio: 1/1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 30;
+}
+
+.project__cardTitle {
+	font-family: 'Orbitron', serif;
+	font-size: 1.5rem;
+	font-weight: 900;
+	cursor: default;
+}
+
+.projects__cardImg {
+	width: 75%;
+	position: absolute;
+	bottom: 15%;
+	/* max-height: 76.5%; */
+}
+
+.project__cardLinksBox {
+	width: 35%;
+	height: 10%;
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+
+.project__cardGit,
+.project__cardLink {
+	display: block;
+	width: 30%;
+	aspect-ratio: 1/1;
+	background-size: cover;
+	transition: transform 1s;
+}
+
+.project__cardGit {
+	background-image: url(../assets/projects-img/github.svg);
+}
+
+.project__cardLink {
+	background-image: url(../assets/projects-img/eye.svg);
+	/* margin-left: auto; */
+}
+
+.project__cardGit:hover,
+.project__cardLink:hover {
+	transform: rotate(360deg) translateZ(1rem) scale(1.2);
 }
