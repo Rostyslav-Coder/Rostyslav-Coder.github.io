@@ -79,8 +79,15 @@
 
 .welcomeText__title>*:nth-of-type(1)>.\(_3,
 .welcomeText__title>*:nth-of-type(1)>.\{_5,
-.welcomeText__title>*:nth-of-type(3)>.\}_0 {
+.welcomeText__title>*:nth-of-type(3)>.\}_0,
+.welcomeText__title>span:nth-of-type(2)>.\(_2,
+.welcomeText__title>span:nth-of-type(4)>.\(_5 {
 	color: var(--yellow, #EDCB66);
+}
+
+.welcomeText__title>span:nth-of-type(2)>.\(_2,
+.welcomeText__title>span:nth-of-type(4)>.\(_5 {
+	margin-left: -1.2rem;
 }
 
 .welcomeText__title>span:nth-of-type(2)>.P_1,

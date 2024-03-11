@@ -3,7 +3,7 @@
 import { ParallaxBanner, ParallaxBannerLayer, Parallax } from 'react-scroll-parallax';
 import ProjectCard from './ProjectCard';
 import projectBackGround from '../assets/projects-img/projectsBg.jpg';
-import { projectsDataLeft, projectsDataRight } from '../data/projectsData';
+import { PROJECTS_DATA_LEFT, PROJECTS_DATA_RIGHT } from '../data/projectsData';
 import '../styles/Projects.css';
 
 const Projects = () => {
@@ -18,7 +18,7 @@ const Projects = () => {
 			<h2 className="projects__title">My Projects</h2>
 			<div className="parallax__box">
 				<div className="parallax__boxLeft">
-					{projectsDataLeft.map(({ cardBg, cardName, cardImage, cardGHLink, cardViewLink }, index) => {
+					{PROJECTS_DATA_LEFT.map(({ cardBg, cardName, cardImage, cardGHLink, cardViewLink }, index) => {
 						return (
 							<Parallax
 								className='parallax__subBoxLeft'
@@ -41,7 +41,7 @@ const Projects = () => {
 					})}
 				</div>
 				<div className="parallax__boxRight">
-					{projectsDataRight.map(({ cardBg, cardName, cardImage, cardGHLink, cardViewLink }, index) => {
+					{PROJECTS_DATA_RIGHT.map(({ cardBg, cardName, cardImage, cardGHLink, cardViewLink }, index) => {
 						return (
 							<Parallax
 								className='parallax__subBoxRight'

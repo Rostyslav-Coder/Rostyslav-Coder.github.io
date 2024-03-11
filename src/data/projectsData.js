@@ -10,7 +10,7 @@ import realEstatePageBg from '../assets/projects-img/realEstatePage/realEstatePa
 import ticTacToeGameBg from '../assets/projects-img/ticTacToeGame/ticTacToeGameBg.jpg';
 import ticTacToeGameLogo from '../assets/projects-img/ticTacToeGame/ticTacToeGameLogo.png';
 
-export const projectsDataLeft = [
+export const PROJECTS_DATA_LEFT = [
 	{
 		cardBg: memoryGameBg,
 		cardName: 'Memory Game',
@@ -37,7 +37,7 @@ export const projectsDataLeft = [
 	},
 ];
 
-export const projectsDataRight = [
+export const PROJECTS_DATA_RIGHT = [
 	{
 		cardBg: carRepairShopBg,
 		cardName: 'Car Repair Shop',

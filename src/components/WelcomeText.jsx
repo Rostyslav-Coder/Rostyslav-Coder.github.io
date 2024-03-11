@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 const WelcomeText = () => {
-	const content = 'hello myNameIs = () => {\nrostyslav.,Putnikov()\n};\nand I\'m = fullStack.,Developer()';
+	const content = 'hello myNameIs = () => {\nrostyslav.,Putnikov,()\n};\nand I\'m = fullStack.,Developer,()';
 	const separators = /[, ]/;
 	const [text, setText] = useState('');
 	const [inputFieldStyle, setInputFieldStyle] = useState({});
@@ -48,7 +48,7 @@ const WelcomeText = () => {
 				<h1 className='welcomeText__title'>
 					{text.split('\n').map((line, index) => (
 						<>
-							<span key={index}>
+							<span key={`${index}_${line}`}>
 								{line.split(separators).map((word, wordIndex) => (
 									<span key={wordIndex} className={`${word[0]}_${wordIndex}`}>
 										{`${word} `}
