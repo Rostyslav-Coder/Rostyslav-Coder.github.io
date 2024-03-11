@@ -53,5 +53,9 @@ export const projectsDataRight = [
 		cardViewLink: 'https://rostyslav-coder.github.io/real-estate/',
 		cardSpeed: '10',
 	},
-	{},
+	{
+		cardName: 'Steampunk Calculator',
+		cardGHLink: 'https://github.com/Rostyslav-Coder/calculator',
+		cardViewLink: 'https://rostyslav-coder.github.io/calculator/',
+	},
 ];

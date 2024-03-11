@@ -6,6 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
 import Certificates from './Certificates';
+import Contacts from './Contacts';
 import '../styles/App.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 			<Projects />
 			<Skills />
 			<Certificates />
+			<Contacts />
 		</ParallaxProvider>
 	);
 };

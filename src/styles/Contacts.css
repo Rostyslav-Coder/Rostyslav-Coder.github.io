@@ -1,0 +1,58 @@
+/* ========== Contacts Component Styles ========== */
+
+.contacts {
+	background-color: #242424;
+	padding: 5rem 5% 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	z-index: 60;
+}
+
+.contacts__title {
+	align-self: center;
+	color: #FFF;
+	font-family: 'Orbitron';
+	font-size: 3.6rem;
+	line-height: 1.2;
+	letter-spacing: 0.2rem;
+	text-shadow: 0 0 1rem #242424;
+	z-index: 61;
+}
+
+.contacts__row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts__col {
+	width: 50%;
+}
+
+.contacts__text {
+	color: #9DD274;
+	font-family: Orbitron, serif;
+	font-size: 1.75rem;
+	cursor: default;
+}
+
+.contacts__text>img {
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+.contacts__link {
+	color: #85dafb;
+	font-family: Orbitron, serif;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.contacts__copyLink {
+	color: #edcb66;
+	font-family: Orbitron, serif;
+	font-size: 1rem;
+}
