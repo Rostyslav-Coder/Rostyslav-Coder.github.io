@@ -12,17 +12,17 @@ const Certificates = () => {
 			<ParallaxBannerLayer
 				className='certificates__layer'
 				image={certificatesBackGround}
-				speed={-40}
+				speed={-45}
 				style={{ backgroundPosition: 'center', backgroundSize: '100%' }}
 			/>
-			<h2 className="certificates__title">My Certificates:</h2>
+			<h2 className="certificates__title">My Certificates</h2>
 			<div className="certificates__parallaxBox">
 				{CERTIFICATES_DATA.map(({ cardName, cardSchool, cardImage, cardLink }, index) => {
 					return (
 						<Parallax
 							className='certificates__parallaxSubBox'
 							key={index}
-							speed={15}
+							speed={20}
 							scale={[0.8, 1.2, 'easeOutQuboc']}
 						>
 							<CertificateCard

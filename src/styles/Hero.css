@@ -1,7 +1,7 @@
 /* ========== Hero Component Styles ========== */
 
 .hero {
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
 	padding: 0 5%;
 	display: flex;
@@ -31,4 +31,60 @@
 	width: 60%;
 	margin-left: auto;
 	z-index: 4;
+}
+
+/* ========== WelcomeText Component Styles ========== */
+
+.welcomeText__titleBox {
+	width: 0px;
+	min-height: 5rem;
+	margin-left: auto;
+	background-color: var(--dark_matte, #272A2FCC);
+	padding: 1rem;
+	border: 2px solid var(--dark, #272A2FCC);
+	border-radius: 1rem;
+	opacity: 0;
+	cursor: default;
+	backdrop-filter: blur(6px);
+	z-index: 3;
+}
+
+.welcomeText__title {
+	color: var(--orange, #FF7A83);
+	font-family: 'Inconsolata', serif;
+	font-size: 2.6rem;
+	font-weight: 700;
+	letter-spacing: normal;
+	text-shadow: 0.75rem 0.75rem 1rem var(--black, #000000);
+	white-space: nowrap;
+}
+
+.welcomeText__title>span:nth-of-type(1)>.h_0,
+.welcomeText__title>span:nth-of-type(4)>.a_0 {
+	color: var(--violet, #BB9CF7);
+}
+
+.welcomeText__title>span:nth-of-type(2)>.r_0 {
+	margin-left: 2.8rem;
+}
+
+.welcomeText__title>span:nth-of-type(1)>.m_1,
+.welcomeText__title>span:nth-of-type(2)>.r_0,
+.welcomeText__title>span:nth-of-type(4)>.I_1,
+.welcomeText__title>span:nth-of-type(4)>.f_3,
+.welcomeText__title>span:nth-of-type(4)>.f_3 {
+	color: var(--green, #9DD274);
+}
+
+
+.welcomeText__title>*:nth-of-type(1)>.\(_3,
+.welcomeText__title>*:nth-of-type(1)>.\{_5,
+.welcomeText__title>*:nth-of-type(3)>.\}_0 {
+	color: var(--yellow, #EDCB66);
+}
+
+.welcomeText__title>span:nth-of-type(2)>.P_1,
+.welcomeText__title>span:nth-of-type(4)>.D_4 {
+	color: var(--blue, #85DAFB);
+	margin-left: -1.2rem;
 }

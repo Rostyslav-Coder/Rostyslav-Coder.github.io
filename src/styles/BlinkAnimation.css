@@ -1,0 +1,15 @@
+/* ========== Blinc Animation Styles ========== */
+
+@keyframes blink {
+	0% {
+		background-color: var(--white);
+	}
+
+	50% {
+		background-color: transparent;
+	}
+
+	100% {
+		background-color: var(--white);
+	}
+}

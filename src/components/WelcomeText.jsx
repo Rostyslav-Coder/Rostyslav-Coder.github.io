@@ -1,7 +1,6 @@
 // WelcomeText Component Module
 
 import { useState, useEffect } from 'react';
-import '../styles/WelcomeText.css';
 
 const WelcomeText = () => {
 	const content = 'hello myNameIs = () => {\nrostyslav.,Putnikov()\n};\nand I\'m = fullStack.,Developer()';

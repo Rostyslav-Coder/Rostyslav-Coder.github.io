@@ -15,7 +15,7 @@ const Projects = () => {
 				speed={-50}
 				style={{ backgroundPosition: 'center', backgroundSize: '100%' }}
 			/>
-			<h2 className="projects__title">My Projects:</h2>
+			<h2 className="projects__title">My Projects</h2>
 			<div className="parallax__box">
 				<div className="parallax__boxLeft">
 					{projectsDataLeft.map(({ cardBg, cardName, cardImage, cardGHLink, cardViewLink }, index) => {
