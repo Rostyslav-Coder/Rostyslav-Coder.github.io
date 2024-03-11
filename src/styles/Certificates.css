@@ -1,0 +1,79 @@
+/* ========== Certificates Component Styles ========== */
+
+.certificates {
+	width: 100%;
+	min-height: 100vh;
+	padding: 5rem 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	z-index: 50;
+}
+
+.certificates__layer {
+	width: 100%;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	z-index: 51;
+}
+
+.certificates__title {
+	color: #FFF;
+	font-family: 'Orbitron';
+	font-size: 3.6rem;
+	line-height: 1.2;
+	text-shadow: 0 0 1rem #242424;
+	z-index: 52;
+}
+
+.certificates__parallaxBox {
+	width: 100%;
+	z-index: 53;
+}
+
+.certificates__parallaxSubBox {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.certificates__card {
+	width: 100%;
+	aspect-ratio: 3/2;
+	padding: 1rem;
+	background-color: #242424CC;
+	background-size: 80% 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	backdrop-filter: blur(4px);
+	border: 2px solid #242424;
+	border-radius: 1rem;
+	transform-style: preserve-3d;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 54;
+}
+
+.certificates__cardTitle {
+	font-family: Orbitron, serif;
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+.certificates__cardLink {
+	width: 10%;
+	align-self: end;
+}
+
+.certificates__cardLink>img {
+	width: 100%;
+	transition: transform 1s;
+}
+
+.certificates__cardLink>img:hover {
+	transform: rotate(360deg) scale(1.5);
+}
