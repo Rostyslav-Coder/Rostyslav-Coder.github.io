@@ -23,23 +23,26 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 3rem;
-	z-index: 10;
+	z-index: 20;
 }
 
 .about__title {
 	font-family: 'Orbitron';
 	font-size: 3.6rem;
 	line-height: 1.2;
+	z-index: 21;
 }
 
 .cursor {
 	display: inline-block;
 	width: 2.6rem;
 	height: 4.1rem;
+	border-radius: 2px;
 	vertical-align: text-bottom;
 	margin-left: 0.35rem;
 	background-color: #FFFFFF99;
 	animation: blink 1s infinite;
+	z-index: 22;
 }
 
 .about__text {
@@ -47,4 +50,5 @@
 	font-size: 1.4rem;
 	line-height: 1.4;
 	text-align: justify;
+	z-index: 23;
 }

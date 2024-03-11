@@ -3,17 +3,17 @@
 .projects {
 	min-height: 100vh;
 	padding: 5rem 5%;
-	background-image: url(../assets/projects-img/projectsBg.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	gap: 2rem;
-	z-index: 30;
+	z-index: 20;
+}
+
+.projects__layer {
+	background-repeat: no-repeat;
+	z-index: 21;
 }
 
 .projects__title {
@@ -21,10 +21,32 @@
 	font-family: 'Orbitron';
 	font-size: 3.6rem;
 	line-height: 1.2;
+	z-index: 22;
 }
 
 .parallax__box {
-	width: 35%;
+	width: 80%;
+	display: flex;
+	z-index: 23;
+
+}
+
+.parallax__boxLeft {
+	width: 50%;
+}
+
+.parallax__boxRight {
+	width: 50%;
+}
+
+.parallax__subBoxLeft {
+	width: 80%;
+	margin-right: auto;
+}
+
+.parallax__subBoxRight {
+	width: 80%;
+	margin-left: auto;
 }
 
 .project__card {
@@ -45,7 +67,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 30;
+	z-index: 24;
 }
 
 .project__cardTitle {
@@ -59,7 +81,6 @@
 	width: 75%;
 	position: absolute;
 	bottom: 15%;
-	/* max-height: 76.5%; */
 }
 
 .project__cardLinksBox {

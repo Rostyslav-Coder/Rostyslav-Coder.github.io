@@ -10,7 +10,7 @@ import realEstatePageBg from '../assets/projects-img/realEstatePage/realEstatePa
 import ticTacToeGameBg from '../assets/projects-img/ticTacToeGame/ticTacToeGameBg.jpg';
 import ticTacToeGameLogo from '../assets/projects-img/ticTacToeGame/ticTacToeGameLogo.png';
 
-const projectsData = [
+export const projectsDataLeft = [
 	{
 		cardBg: memoryGameBg,
 		cardName: 'Memory Game',
@@ -20,27 +20,12 @@ const projectsData = [
 		cardSpeed: '1',
 	},
 	{
-		cardBg: carRepairShopBg,
-		cardName: 'Car Repair Shop',
-		cardImage: carRepairShopLogo,
-		cardGHLink: 'https://github.com/Rostyslav-Coder/react-car-repair-shop/tree/main',
-		cardViewLink: 'https://rostyslav-coder.github.io/react-car-repair-shop/',
-		cardSpeed: '10',
-	},
-	{
 		cardBg: restaurantPageBg,
 		cardName: 'Restaurant Page',
 		cardImage: restaurantPageLogo,
 		cardGHLink: 'https://github.com/Rostyslav-Coder/restaurant--page/tree/main',
 		cardViewLink: 'https://rostyslav-coder.github.io/restaurant--page/',
 		cardSpeed: '1',
-	},
-	{
-		cardBg: realEstatePageBg,
-		cardName: 'Real Estate Page',
-		cardGHLink: 'https://github.com/Rostyslav-Coder/real-estate',
-		cardViewLink: 'https://rostyslav-coder.github.io/real-estate/',
-		cardSpeed: '10',
 	},
 	{
 		cardBg: ticTacToeGameBg,
@@ -52,4 +37,21 @@ const projectsData = [
 	},
 ];
 
-export default projectsData;
+export const projectsDataRight = [
+	{
+		cardBg: carRepairShopBg,
+		cardName: 'Car Repair Shop',
+		cardImage: carRepairShopLogo,
+		cardGHLink: 'https://github.com/Rostyslav-Coder/react-car-repair-shop/tree/main',
+		cardViewLink: 'https://rostyslav-coder.github.io/react-car-repair-shop/',
+		cardSpeed: '10',
+	},
+	{
+		cardBg: realEstatePageBg,
+		cardName: 'Real Estate Page',
+		cardGHLink: 'https://github.com/Rostyslav-Coder/real-estate',
+		cardViewLink: 'https://rostyslav-coder.github.io/real-estate/',
+		cardSpeed: '10',
+	},
+	{},
+];
