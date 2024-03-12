@@ -11,6 +11,9 @@ import realEstatePageBg from '../assets/projects-img/realEstatePage/realEstatePa
 import realEstatePageLogo from '../assets/projects-img/realEstatePage/realEstateLogo.webp';
 import ticTacToeGameBg from '../assets/projects-img/ticTacToeGame/ticTacToeGameBg.jpg';
 import ticTacToeGameLogo from '../assets/projects-img/ticTacToeGame/ticTacToeGameLogo.webp';
+import steampunkCalculatorBg from '../assets/projects-img/steampankCalculator/steampunkCalculatorBg.jpg';
+import steampunkCalculatorLogo from '../assets/projects-img/steampankCalculator/steampunkCalculatorLogo.webp';
+import cvBuilderBg from '../assets/projects-img/cvBuilder/cvBuilderBg.jpg';
 
 const PROJECTS_DATA = [
 	{
@@ -60,9 +63,18 @@ const PROJECTS_DATA = [
 	},
 	{
 		id: uuid_4(),
+		cardBg: steampunkCalculatorBg,
 		cardName: 'Steampunk Calculator',
+		cardImage: steampunkCalculatorLogo,
 		cardGHLink: 'https://github.com/Rostyslav-Coder/calculator',
 		cardViewLink: 'https://rostyslav-coder.github.io/calculator/',
+	},
+	{
+		id: uuid_4(),
+		cardBg: cvBuilderBg,
+		cardName: 'CV Builder',
+		cardGHLink: 'https://github.com/Rostyslav-Coder/react-cv-constructor',
+		cardViewLink: 'https://rostyslav-coder.github.io/react-cv-constructor/',
 	},
 ];
 
