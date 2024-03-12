@@ -1,5 +1,6 @@
 // Skills Data File
 
+import { v4 as uuid_4 } from 'uuid';
 import python from '../assets/skills-img/python.png';
 import javaScript from '../assets/skills-img/javaScript.png';
 import postgreSQL from '../assets/skills-img/postgresql.png';
@@ -22,26 +23,26 @@ import npm from '../assets/skills-img/npm.png';
 import figma from '../assets/skills-img/figma.png';
 
 const SKILLS = [
-	{ url: python, name: 'Python' },
-	{ url: javaScript, name: 'JavaScript' },
-	{ url: postgreSQL, name: 'PostgreSQL' },
-	{ url: postman, name: 'Postman' },
-	{ url: fastAPI, name: 'FastAPI' },
-	{ url: nodeJS, name: 'NodeJS' },
-	{ url: mySQL, name: 'MySQL' },
-	{ url: git, name: 'Git' },
-	{ url: django, name: 'Django' },
-	{ url: react, name: 'React' },
-	{ url: docker, name: 'Docker' },
-	{ url: gitHub, name: 'GitHub' },
-	{ url: celery, name: 'Celery' },
-	{ url: html, name: 'HTML' },
-	{ url: vite, name: 'Vite' },
-	{ url: swagger, name: 'Swagger' },
-	{ url: redis, name: 'Redis' },
-	{ url: css, name: 'CSS' },
-	{ url: npm, name: 'NPM' },
-	{ url: figma, name: 'Figma' },
+	{ id: uuid_4(), url: python, name: 'Python' },
+	{ id: uuid_4(), url: javaScript, name: 'JavaScript' },
+	{ id: uuid_4(), url: postgreSQL, name: 'PostgreSQL' },
+	{ id: uuid_4(), url: postman, name: 'Postman' },
+	{ id: uuid_4(), url: fastAPI, name: 'FastAPI' },
+	{ id: uuid_4(), url: nodeJS, name: 'NodeJS' },
+	{ id: uuid_4(), url: mySQL, name: 'MySQL' },
+	{ id: uuid_4(), url: git, name: 'Git' },
+	{ id: uuid_4(), url: django, name: 'Django' },
+	{ id: uuid_4(), url: react, name: 'React' },
+	{ id: uuid_4(), url: docker, name: 'Docker' },
+	{ id: uuid_4(), url: gitHub, name: 'GitHub' },
+	{ id: uuid_4(), url: celery, name: 'Celery' },
+	{ id: uuid_4(), url: html, name: 'HTML' },
+	{ id: uuid_4(), url: vite, name: 'Vite' },
+	{ id: uuid_4(), url: swagger, name: 'Swagger' },
+	{ id: uuid_4(), url: redis, name: 'Redis' },
+	{ id: uuid_4(), url: css, name: 'CSS' },
+	{ id: uuid_4(), url: npm, name: 'NPM' },
+	{ id: uuid_4(), url: figma, name: 'Figma' },
 ];
 
 export default SKILLS;

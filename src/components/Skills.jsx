@@ -10,8 +10,8 @@ const Skills = () => {
 		<div className="skills">
 			<h2 className="skills__title">My Skills<span className='skills__cursor'></span></h2>
 			<div className="skills__box">
-				{skillData.map(({ url, name }, index) => {
-					return <SkillCard key={index} image={url} name={name} />
+				{skillData.map(({ id, url, name }, index) => {
+					return <SkillCard key={`${index}_${id}`} image={url} name={name} />
 				})}
 			</div>
 		</div>
