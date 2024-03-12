@@ -2,14 +2,15 @@
 
 import { v4 as uuid_4 } from 'uuid';
 import memoryGameBg from '../assets/projects-img/memoryGame/memoryGameBg.jpg';
-import memoryGameLogo from '../assets/projects-img/memoryGame/memoryGameLogo.png';
-import restaurantPageBg from '../assets/projects-img/restaurantPage/restaurantPageBg.png';
-import restaurantPageLogo from '../assets/projects-img/restaurantPage/restaurantPageLogo.png';
+import memoryGameLogo from '../assets/projects-img/memoryGame/memoryGameLogo.webp';
+import restaurantPageBg from '../assets/projects-img/restaurantPage/restaurantPageBg.jpg';
+import restaurantPageLogo from '../assets/projects-img/restaurantPage/restaurantPageLogo.webp';
 import carRepairShopBg from '../assets/projects-img/carRepairShop/carRepairShopBg.jpg';
-import carRepairShopLogo from '../assets/projects-img/carRepairShop/carRepairShopLogo.png';
+import carRepairShopLogo from '../assets/projects-img/carRepairShop/carRepairShopLogo.webp';
 import realEstatePageBg from '../assets/projects-img/realEstatePage/realEstatePageBg.jpg';
+import realEstatePageLogo from '../assets/projects-img/realEstatePage/realEstateLogo.webp';
 import ticTacToeGameBg from '../assets/projects-img/ticTacToeGame/ticTacToeGameBg.jpg';
-import ticTacToeGameLogo from '../assets/projects-img/ticTacToeGame/ticTacToeGameLogo.png';
+import ticTacToeGameLogo from '../assets/projects-img/ticTacToeGame/ticTacToeGameLogo.webp';
 
 const PROJECTS_DATA = [
 	{
@@ -43,6 +44,7 @@ const PROJECTS_DATA = [
 		id: uuid_4(),
 		cardBg: realEstatePageBg,
 		cardName: 'Real Estate Page',
+		cardImage: realEstatePageLogo,
 		cardGHLink: 'https://github.com/Rostyslav-Coder/real-estate',
 		cardViewLink: 'https://rostyslav-coder.github.io/real-estate/',
 		cardSpeed: '10',

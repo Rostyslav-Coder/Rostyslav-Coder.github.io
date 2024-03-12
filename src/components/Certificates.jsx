@@ -17,15 +17,16 @@ const Certificates = () => {
 			/>
 			<h2 className="certificates__title">My Certificates</h2>
 			<div className="certificates__parallaxBox">
-				{CERTIFICATES_DATA.map(({ cardName, cardSchool, cardImage, cardLink }, index) => {
+				{CERTIFICATES_DATA.map(({ id, cardName, cardSchool, cardImage, cardLink }, index) => {
 					return (
 						<Parallax
 							className='certificates__parallaxSubBox'
-							key={index}
+							key={`${id}`}
 							speed={20}
 							scale={[0.8, 1.2, 'easeOutQuboc']}
 						>
 							<CertificateCard
+								key={`${index}_${id}`}
 								cardName={cardName}
 								cardSchool={cardSchool}
 								cardImage={cardImage}
