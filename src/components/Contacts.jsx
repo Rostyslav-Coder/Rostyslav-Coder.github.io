@@ -10,16 +10,16 @@ const Contacts = () => {
 			<h2 className='contacts__title'>You can contact me</h2>
 			<div className="contacts__row">
 				<div className="contacts__col">
-					{CONTACT_DATA.map(({ image, name, type, link, text }, index) => {
+					{CONTACT_DATA.map(({ id, image, name, type, link, text }, index) => {
 						if (index % 2 === 0) {
-							return <ContactItem key={index} image={image} name={name} type={type} link={link} text={text} />
+							return <ContactItem key={id} image={image} name={name} type={type} link={link} text={text} />
 						}
 					})}
 				</div>
 				<div className="contacts__col">
-					{CONTACT_DATA.map(({ image, name, type, link, text }, index) => {
+					{CONTACT_DATA.map(({ id, image, name, type, link, text }, index) => {
 						if (index % 2 !== 0) {
-							return <ContactItem key={index} image={image} name={name} type={type} link={link} text={text} />
+							return <ContactItem key={id} image={image} name={name} type={type} link={link} text={text} />
 						}
 					})}
 				</div>

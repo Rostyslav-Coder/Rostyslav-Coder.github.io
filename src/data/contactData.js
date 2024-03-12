@@ -1,5 +1,6 @@
 // Contact Data File
 
+import { v4 as uuidv4 } from 'uuid';
 import locationImage from '../assets/contacts/locationLogo.webp';
 import githubImage from '../assets/contacts/githubLogo.webp';
 import viberImage from '../assets/contacts/viberLogo.webp';
@@ -10,6 +11,7 @@ import emailImage from '../assets/contacts/emailLogo.webp';
 
 export const CONTACT_DATA = [
 	{
+		id: uuidv4(),
 		image: locationImage,
 		name: 'Location',
 		type: '',
@@ -17,6 +19,7 @@ export const CONTACT_DATA = [
 		text: 'Odesa, Odesa Oblast, Ukraine',
 	},
 	{
+		id: uuidv4(),
 		image: githubImage,
 		name: 'GitHub',
 		type: 'https://',
@@ -24,6 +27,7 @@ export const CONTACT_DATA = [
 		text: 'https://github.com/Rostyslav-Coder',
 	},
 	{
+		id: uuidv4(),
 		image: viberImage,
 		name: 'Viber',
 		type: 'viber://chat?number=',
@@ -31,6 +35,7 @@ export const CONTACT_DATA = [
 		text: '+380682240608',
 	},
 	{
+		id: uuidv4(),
 		image: linkedinImage,
 		name: 'LinkedIn',
 		type: 'https://',
@@ -38,6 +43,7 @@ export const CONTACT_DATA = [
 		text: 'https://www.linkedin.com/in/rostyslav-putnikov-76484926a',
 	},
 	{
+		id: uuidv4(),
 		image: telegramImage,
 		name: 'Telegram',
 		type: 'https://',
@@ -45,6 +51,7 @@ export const CONTACT_DATA = [
 		text: 'https://t.me/rostyslav_put',
 	},
 	{
+		id: uuidv4(),
 		image: websiteImage,
 		name: 'Website',
 		type: '',
@@ -52,6 +59,7 @@ export const CONTACT_DATA = [
 		text: 'My Web Page',
 	},
 	{
+		id: uuidv4(),
 		image: emailImage,
 		name: 'Email',
 		type: 'mailto:',
