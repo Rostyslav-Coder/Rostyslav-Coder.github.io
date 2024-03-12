@@ -1,5 +1,6 @@
 // Projects Data File
 
+import { v4 as uuid_4 } from 'uuid';
 import memoryGameBg from '../assets/projects-img/memoryGame/memoryGameBg.jpg';
 import memoryGameLogo from '../assets/projects-img/memoryGame/memoryGameLogo.png';
 import restaurantPageBg from '../assets/projects-img/restaurantPage/restaurantPageBg.png';
@@ -10,8 +11,9 @@ import realEstatePageBg from '../assets/projects-img/realEstatePage/realEstatePa
 import ticTacToeGameBg from '../assets/projects-img/ticTacToeGame/ticTacToeGameBg.jpg';
 import ticTacToeGameLogo from '../assets/projects-img/ticTacToeGame/ticTacToeGameLogo.png';
 
-export const PROJECTS_DATA_LEFT = [
+const PROJECTS_DATA = [
 	{
+		id: uuid_4(),
 		cardBg: memoryGameBg,
 		cardName: 'Memory Game',
 		cardImage: memoryGameLogo,
@@ -20,25 +22,7 @@ export const PROJECTS_DATA_LEFT = [
 		cardSpeed: '1',
 	},
 	{
-		cardBg: restaurantPageBg,
-		cardName: 'Restaurant Page',
-		cardImage: restaurantPageLogo,
-		cardGHLink: 'https://github.com/Rostyslav-Coder/restaurant--page/tree/main',
-		cardViewLink: 'https://rostyslav-coder.github.io/restaurant--page/',
-		cardSpeed: '1',
-	},
-	{
-		cardBg: ticTacToeGameBg,
-		cardName: 'Tic Tac Toe Game',
-		cardImage: ticTacToeGameLogo,
-		cardGHLink: 'https://github.com/Rostyslav-Coder/tic-tac-toe',
-		cardViewLink: 'https://rostyslav-coder.github.io/tic-tac-toe/',
-		cardSpeed: '1',
-	},
-];
-
-export const PROJECTS_DATA_RIGHT = [
-	{
+		id: uuid_4(),
 		cardBg: carRepairShopBg,
 		cardName: 'Car Repair Shop',
 		cardImage: carRepairShopLogo,
@@ -47,6 +31,16 @@ export const PROJECTS_DATA_RIGHT = [
 		cardSpeed: '10',
 	},
 	{
+		id: uuid_4(),
+		cardBg: restaurantPageBg,
+		cardName: 'Restaurant Page',
+		cardImage: restaurantPageLogo,
+		cardGHLink: 'https://github.com/Rostyslav-Coder/restaurant--page/tree/main',
+		cardViewLink: 'https://rostyslav-coder.github.io/restaurant--page/',
+		cardSpeed: '1',
+	},
+	{
+		id: uuid_4(),
 		cardBg: realEstatePageBg,
 		cardName: 'Real Estate Page',
 		cardGHLink: 'https://github.com/Rostyslav-Coder/real-estate',
@@ -54,8 +48,20 @@ export const PROJECTS_DATA_RIGHT = [
 		cardSpeed: '10',
 	},
 	{
+		id: uuid_4(),
+		cardBg: ticTacToeGameBg,
+		cardName: 'Tic Tac Toe Game',
+		cardImage: ticTacToeGameLogo,
+		cardGHLink: 'https://github.com/Rostyslav-Coder/tic-tac-toe',
+		cardViewLink: 'https://rostyslav-coder.github.io/tic-tac-toe/',
+		cardSpeed: '1',
+	},
+	{
+		id: uuid_4(),
 		cardName: 'Steampunk Calculator',
 		cardGHLink: 'https://github.com/Rostyslav-Coder/calculator',
 		cardViewLink: 'https://rostyslav-coder.github.io/calculator/',
 	},
 ];
+
+export default PROJECTS_DATA;
