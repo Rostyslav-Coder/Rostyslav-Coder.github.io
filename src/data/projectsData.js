@@ -30,8 +30,8 @@ const PROJECTS_DATA = [
 		cardBg: carRepairShopBg,
 		cardName: 'Car Repair Shop',
 		cardImage: carRepairShopLogo,
-		cardGHLink: 'https://github.com/Rostyslav-Coder/react-car-repair-shop/tree/main',
-		cardViewLink: 'https://rostyslav-coder.github.io/react-car-repair-shop/',
+		cardGHLink: 'https://github.com/Rostyslav-Coder/car-repair-shop-page',
+		cardViewLink: 'https://rostyslav-coder.github.io/car-repair-shop-page/',
 		cardSpeed: '10',
 	},
 	{

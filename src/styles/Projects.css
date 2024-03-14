@@ -2,7 +2,7 @@
 
 .projects {
 	min-height: 100vh;
-	padding: 5rem 10%;
+	padding: 5rem 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -12,41 +12,35 @@
 }
 
 .projects__layer {
+	width: 100%;
+	min-height: 100vh;
 	background-repeat: no-repeat;
+	background-size: auto 150%;
 	z-index: 21;
 }
 
 .projects__title {
 	color: var(--white, #CDCDCD);
-	font-size: 3.6rem;
+	font-size: 2rem;
 	font-weight: 900;
 	text-shadow: 0 0 1rem var(--background, #242424);
 	z-index: 22;
 }
 
 .parallax__box {
-	width: 100%;
+	width: 80%;
 	display: flex;
+	flex-direction: column;
 	z-index: 23;
 }
 
-.parallax__boxLeft,
-.parallax__boxRight {
-	width: 50%;
-}
-
-.parallax__subBoxLeft {
-	width: 75%;
-	margin-right: auto;
-}
-
-.parallax__subBoxRight {
-	width: 75%;
-	margin-left: auto;
+.parallax__boxCenter {
+	width: 100%;
 }
 
 .project__card {
 	width: 100%;
+	margin: 0 auto;
 	padding: 1rem;
 	position: relative;
 	background-color: var(--dark_matte, #272A2FCC);
@@ -66,7 +60,7 @@
 }
 
 .project__cardTitle {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 900;
 	cursor: default;
 }
@@ -79,7 +73,7 @@
 
 .project__cardLinksBox {
 	width: 35%;
-	height: 10.5%;
+	height: 10%;
 	align-self: flex-end;
 	display: flex;
 	justify-content: space-between;
@@ -90,7 +84,6 @@
 	display: block;
 	width: 30%;
 	background-size: cover;
-	transition: transform 1s;
 }
 
 .project__cardGit {
@@ -101,7 +94,60 @@
 	background-image: url(../assets/projects-img/eye.svg);
 }
 
-.project__cardGit:hover,
-.project__cardLink:hover {
-	transform: rotate(720deg) translateZ(1.2rem) scale(1.25);
+@media screen and (orientation: landscape) {
+	.projects {
+		padding: 5rem 10%;
+	}
+
+	.projects__title {
+		font-size: 3rem;
+	}
+
+	.parallax__box {
+		width: 90%;
+		flex-direction: row;
+	}
+
+	.parallax__boxLeft,
+	.parallax__boxRight {
+		width: 50%;
+	}
+
+	.parallax__subBoxLeft {
+		width: 80%;
+		margin-right: auto;
+	}
+
+	.parallax__subBoxRight {
+		width: 80%;
+		margin-left: auto;
+	}
+
+	.project__cardTitle {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.projects__title {
+		font-size: 3.6rem;
+	}
+
+	.parallax__box {
+		width: 100%;
+	}
+
+	.project__cardTitle {
+		font-size: 1.5rem;
+	}
+
+	.project__cardGit,
+	.project__cardLink {
+		transition: transform 1s;
+	}
+
+	.project__cardGit:hover,
+	.project__cardLink:hover {
+		transform: rotate(720deg) translateZ(1.2rem) scale(1.25);
+	}
 }

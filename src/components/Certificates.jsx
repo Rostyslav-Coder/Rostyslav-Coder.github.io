@@ -13,7 +13,7 @@ const Certificates = () => {
 				className='certificates__layer'
 				image={certificatesBackGround}
 				speed={-45}
-				style={{ backgroundPosition: 'center', backgroundSize: '100%' }}
+				style={{ backgroundPosition: 'center' }}
 			/>
 			<h2 className="certificates__title">My Certificates</h2>
 			<div className="certificates__parallaxBox">

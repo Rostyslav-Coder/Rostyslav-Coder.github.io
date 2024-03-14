@@ -17,7 +17,7 @@ const Hero = () => {
 				transition: '2.5s',
 				transitionProperty: 'opacity, transform',
 				transformOrigin: 'bottom',
-				transform: 'scale(1)',
+				transform: 'scale(1.2)',
 				opacity: '1',
 			});
 		}, 1500)
@@ -33,7 +33,7 @@ const Hero = () => {
 				className='hero__layer'
 				image={heroBackGround}
 				speed={-25}
-				style={{ backgroundPosition: 'top', backgroundSize: '100% auto' }}
+				style={{ backgroundPosition: 'top' }}
 			/>
 			<img className='hero__image' src={hero} alt='My photo' style={heroStyle} />
 			<Parallax className='hero__parallaxBox' speed={15}>

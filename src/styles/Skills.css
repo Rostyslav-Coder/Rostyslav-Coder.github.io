@@ -2,7 +2,7 @@
 
 .skills {
 	background-color: var(--background, #242424);
-	padding: 5rem 10%;
+	padding: 5rem 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -13,14 +13,14 @@
 
 .skills__title {
 	color: var(--violet, #BB9CF7);
-	font-size: 3.6rem;
+	font-size: 2rem;
 	font-weight: 900;
 }
 
 .skills__cursor {
 	display: inline-block;
-	width: 2.6rem;
-	height: 0.5rem;
+	width: 1.8rem;
+	height: 0.3rem;
 	border-radius: 2px;
 	vertical-align: text-bottom;
 	margin-left: 0.35rem;
@@ -37,10 +37,10 @@
 }
 
 .skill__card {
-	width: 22%;
+	width: 48%;
 	min-height: 3.2rem;
 	padding: 0.6rem 1rem;
-	margin-bottom: 1.8rem;
+	margin-bottom: 1rem;
 	background-color: var(--dark, #272A2F);
 	border: 1px solid var(--white, #CDCDCD);
 	border-radius: 0.5rem;
@@ -51,12 +51,56 @@
 }
 
 .skill__image {
-	max-width: 2rem;
-	max-height: 2rem;
+	max-width: 1rem;
+	max-height: 1rem;
 }
 
 .skill__name {
 	color: var(--yellow, #EDCB66);
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 	letter-spacing: 0.1rem;
+}
+
+@media screen and (orientation: landscape) {
+	.skills__title {
+		font-size: 3rem;
+	}
+
+	.skills__cursor {
+		width: 2rem;
+		height: 0.4rem;
+	}
+
+	.skill__card {
+		width: 22%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.skills {
+		padding: 5rem 10%;
+	}
+
+	.skills__title {
+		font-size: 3.6rem;
+	}
+
+	.skills__cursor {
+		width: 2.6rem;
+		height: 0.5rem;
+	}
+
+	.skill__card {
+		min-height: 3.2rem;
+		margin-bottom: 1.8rem;
+	}
+
+	.skill__image {
+		max-width: 2rem;
+		max-height: 2rem;
+	}
+
+	.skill__name {
+		font-size: 1.2rem;
+	}
 }

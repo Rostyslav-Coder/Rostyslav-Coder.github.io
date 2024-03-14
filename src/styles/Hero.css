@@ -14,45 +14,42 @@
 	width: 100%;
 	min-height: 100vh;
 	background-repeat: no-repeat;
+	background-size: auto 150%;
 	z-index: 2;
 }
 
 .hero__image {
 	position: absolute;
 	bottom: 0;
-	left: 5%;
-	width: 50%;
-	transform: scale(0.8);
+	left: 0;
+	width: 100%;
 	opacity: 0;
 	z-index: 3;
 }
 
 .hero__parallaxBox {
-	width: 60%;
-	margin-left: auto;
+	width: 100%;
 	z-index: 4;
 }
 
 /* ========== WelcomeText Component Styles ========== */
-
 .welcomeText__titleBox {
 	width: 0px;
-	min-height: 5rem;
+	min-height: 3.8rem;
 	margin-left: auto;
 	background-color: var(--dark_matte, #272A2FCC);
 	padding: 1rem;
 	border: 2px solid var(--dark, #272A2FCC);
 	border-radius: 1rem;
-	opacity: 0;
-	cursor: default;
 	backdrop-filter: blur(6px);
-	z-index: 3;
+	opacity: 0;
+	z-index: 5;
 }
 
 .welcomeText__title {
 	color: var(--orange, #FF7A83);
 	font-family: 'Inconsolata', serif;
-	font-size: 2.6rem;
+	font-size: 1.3rem;
 	font-weight: 700;
 	letter-spacing: normal;
 	text-shadow: 0.75rem 0.75rem 1rem var(--black, #000000);
@@ -65,7 +62,7 @@
 }
 
 .welcomeText__title>span:nth-of-type(2)>.r_0 {
-	margin-left: 2.8rem;
+	margin-left: 1.5rem;
 }
 
 .welcomeText__title>span:nth-of-type(1)>.m_1,
@@ -75,7 +72,6 @@
 .welcomeText__title>span:nth-of-type(4)>.f_3 {
 	color: var(--green, #9DD274);
 }
-
 
 .welcomeText__title>*:nth-of-type(1)>.\(_3,
 .welcomeText__title>*:nth-of-type(1)>.\{_5,
@@ -87,11 +83,59 @@
 
 .welcomeText__title>span:nth-of-type(2)>.\(_2,
 .welcomeText__title>span:nth-of-type(4)>.\(_5 {
-	margin-left: -1.2rem;
+	margin-left: -0.6rem;
 }
 
 .welcomeText__title>span:nth-of-type(2)>.P_1,
 .welcomeText__title>span:nth-of-type(4)>.D_4 {
 	color: var(--blue, #85DAFB);
-	margin-left: -1.2rem;
+	margin-left: -0.6rem;
+}
+
+@media screen and (orientation: landscape) {
+	.hero__layer {
+		background-size: 100% auto;
+	}
+
+	.hero__image {
+		left: 5%;
+		width: 40%;
+	}
+
+	.hero__parallaxBox {
+		width: 65%;
+		margin-left: auto;
+	}
+
+	.welcomeText__titleBox {
+		min-height: 4.8rem;
+	}
+
+	.welcomeText__title {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero__image {
+		width: 45%;
+	}
+
+	.welcomeText__titleBox {
+		min-height: 5rem;
+		cursor: default;
+	}
+
+	.welcomeText__title {
+		font-size: 2.6rem;
+	}
+
+	.welcomeText__title>span:nth-of-type(2)>.r_0 {
+		margin-left: 2.8rem;
+	}
+
+	.welcomeText__title>span:nth-of-type(2)>.P_1,
+	.welcomeText__title>span:nth-of-type(4)>.D_4 {
+		margin-left: -1.2rem;
+	}
 }
