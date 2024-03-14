@@ -55,8 +55,8 @@ export const CONTACT_DATA = [
 		image: websiteImage,
 		name: 'Website',
 		type: 'https://',
-		link: 'rostyslav-coder.github.io/React-my-cv-page/',
-		text: 'https://rostyslav-coder.github.io/React-my-cv-page/',
+		link: 'rostyslav-coder.github.io/',
+		text: 'https://rostyslav-coder.github.io/',
 	},
 	{
 		id: uuidv4(),
