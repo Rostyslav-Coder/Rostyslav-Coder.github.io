@@ -39,8 +39,8 @@ const PROJECTS_DATA = [
 		cardBg: restaurantPageBg,
 		cardName: 'Restaurant Page',
 		cardImage: restaurantPageLogo,
-		cardGHLink: 'https://github.com/Rostyslav-Coder/restaurant--page/tree/main',
-		cardViewLink: 'https://rostyslav-coder.github.io/restaurant--page/',
+		cardGHLink: 'https://rostyslav-coder.github.io/restaurant-page/',
+		cardViewLink: 'https://rostyslav-coder.github.io/restaurant-page/',
 		cardSpeed: '1',
 	},
 	{

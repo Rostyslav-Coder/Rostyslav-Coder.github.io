@@ -47,9 +47,10 @@
 	background-size: 80% 70%;
 	background-repeat: no-repeat;
 	background-position: center;
-	backdrop-filter: blur(4px);
+	/* backdrop-filter: blur(4px); */
 	border: 2px solid var(--dark, #272A2F);
 	border-radius: 1rem;
+	transform: perspective(1000px);
 	transform-style: preserve-3d;
 	aspect-ratio: 1/1;
 	display: flex;
@@ -66,6 +67,7 @@
 }
 
 .projects__cardImg {
+	transform: translateZ(1rem);
 	width: 75%;
 	position: absolute;
 	bottom: 15%;
@@ -146,8 +148,8 @@
 		transition: transform 1s;
 	}
 
-	.project__cardGit:hover,
-	.project__cardLink:hover {
-		transform: rotate(720deg) translateZ(1.2rem) scale(1.25);
-	}
+	/* .project__cardGit:hover, */
+	/* .project__cardLink:hover { */
+	/* transform: rotate(720deg) translateZ(0.9rem) scale(1.25); */
+	/* } */
 }
